@@ -37,5 +37,6 @@ public static void main(String[] args) {
 
     student s1=new student("Harish", 2013030,"A", "A", "O", "B+", "A+", 8.234);
     s1.print();
+    System.out.println("haerish");
 }
 }
