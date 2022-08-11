@@ -1,5 +1,5 @@
 package Practise;
-import java.util.*;
+
 
 public class DeletingWithCondition {
 public static void main(String[] args) {

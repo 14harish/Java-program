@@ -1,5 +1,4 @@
 package Date5;
-import java.util.*;
 public class occurenceOfStr {
 public static void main(String[] args) {
 	String n="malayalam";

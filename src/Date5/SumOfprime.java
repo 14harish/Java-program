@@ -1,5 +1,5 @@
 package Date5;
-import java.util.*;
+
 public class SumOfprime {
 public static void main(String[] args) {
 	int arr[]= {2,4,6,9,11};
