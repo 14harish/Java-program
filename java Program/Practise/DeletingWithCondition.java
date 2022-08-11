@@ -5,7 +5,6 @@ public class DeletingWithCondition {
 public static void main(String[] args) {
 	String name="Harish";
 	StringBuffer sc=new StringBuffer(name);
-	String arr[]=new String[name.length()*2];
 //	System.out.println(arr.length);
 	int count=5;	
 	   for(int j=0;j<name.length();j++) {
