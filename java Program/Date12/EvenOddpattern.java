@@ -1,32 +1,33 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class EvenOddpattern {
     public static void main(String[] args) {
-        int arr[]={9, 8, 13, 2, 19, 14};
-        int arr1[]=new int[arr.length];
+        int arr[]={9, 8, 13, 2, 19, 14,12};
         Arrays.sort(arr);
-        int j=0;
-        if(arr[0]%2==0){
-            for(int i=0;i<arr.length;i++){
-                for(;j<arr.length;j++){
-                    if(i%2==0){
-                        if(arr[j]%2==0){
-                            arr1[i]=arr[j];
-                        }    
-                    }
-                    else{
-                        arr1[i]=0;
-                        break;
-                    }
-                }
+        ArrayList<Integer> odd=new ArrayList<>();
+        ArrayList<Integer> even=new ArrayList<>();
+        ArrayList<Integer> full=new ArrayList<>();
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                even.add(arr[i]);
+            }
+            else{
+                odd.add(arr[i]);
             }
         }
+        System.out.println(odd+"-"+even);
+        if(arr[0]%2==0){
+            for(int i=0;i<even.size();i++){
+                full.add(even.get(i));
+                for(int j=0;j<odd.size();j++){
+                    full.add(odd.get(j));
+                }
+                }
+            }
         else{
-
         }
-        for(int i=0;i<arr1.length;i++){ 
-            System.out.println(arr1[i]+"-"+arr[i]);
-    }
+         System.out.println(full);
 }
 }
