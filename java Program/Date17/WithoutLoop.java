@@ -2,16 +2,16 @@ package Date17;
 
 public class WithoutLoop {
     public static void main(String[] args) {
-       int n=10;
-        loop(1);   
+       int t=100;
+        loop(1,t);   
     }
 
-static int loop(int n){
-    if(n==10){
+static int loop(int n,int t){
+    if(n==t){
         System.out.println(n);
         return 0;
     }
    System.out.println(n);
-        return loop(n+1);       
+        return loop(n+1,t);       
 }
 }

@@ -1,6 +1,5 @@
 package Date17;
 
-import javax.swing.event.SwingPropertyChangeSupport;
 
 public class Runlength {
     public static void main(String[] args) {
