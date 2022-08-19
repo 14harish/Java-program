@@ -14,20 +14,22 @@ public static void main(String[] args) {
 			s2.replace(i-1, i, sum+"");
 		}
 		}
-	sum=Character.getNumericValue(name.charAt(0));
+	int sum1=Character.getNumericValue(name.charAt(0));
+	System.out.println(s2);
+	//System.out.println(sum1);
 	for(int i=0;i<s2.length();i++) {
 		
 		if(s2.charAt(i)=='+') {
 			b=Character.getNumericValue(s2.charAt(i+1));
 			System.out.println(b);
-			sum+=b;
+			sum1+=b+sum;
 		}
 		if(s2.charAt(i)=='-') {
 			b=Character.getNumericValue(s2.charAt(i+1));
 			sum-=b;
 		}
 	}
-	System.out.println(sum);
+	System.out.println(sum1);
 	System.out.println(s2);
 }
 }
