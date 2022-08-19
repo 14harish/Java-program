@@ -1,3 +1,7 @@
+import java.util.logging.Handler;
+
+import javax.imageio.IIOException;
+
 public class techNum {
     public static void main(String[] args) {
         int n=2025,sum=0;
