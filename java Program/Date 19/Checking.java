@@ -6,7 +6,10 @@ public class Checking {
         s=s.replace("1","");
         s=s.replace("0","");
         if(s.length()==0){
-            System.out.println("hi");
+            System.out.println("True");
+        }
+        else{
+            System.out.println("Flase");
         }
     }
 }
