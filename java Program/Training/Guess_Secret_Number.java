@@ -2,12 +2,14 @@ package Training;
 
 public class Guess_Secret_Number {
     public static void main(String[] args) {
-        String n="1213",n2="0201";
+        String n="321",n2="4156";
         int r=0,p=0,u=0;
         StringBuffer s=new StringBuffer(n);
         StringBuffer s1=new StringBuffer(n2);
         s=add(s);
         s1=add(s1);
+        // System.out.println(s);
+        // System.out.println(s1);-
         for(int i=0;i<s.length();i++){
             for(int j=0;j<s1.length();j++){
                 if(i==j){
