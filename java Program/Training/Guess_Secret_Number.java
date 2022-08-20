@@ -1,8 +1,15 @@
 package Training;
+import java.util.*;
 
 public class Guess_Secret_Number {
+    static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
-        String n="321",n2="4156";
+        System.out.println("Enter num1:");
+        String n=sc.next();
+        System.out.println("Enter num2:");
+        String n2=sc.next();
+        //String n="321",n2="4156";
+      //  System.out.println(n2);
         int r=0,p=0,u=0;
         StringBuffer s=new StringBuffer(n);
         StringBuffer s1=new StringBuffer(n2);
