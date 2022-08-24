@@ -1,14 +1,18 @@
 package Training;
+import java.util.*;
 
 public class Hill_Climber_Encryption_2D_Array {
     public static void main(String[] args) {
-        String in="ACT";
-        String key="GYBNQKURP";
-        int k=0,v=0;
+        Scanner sb=new Scanner(System.in);
+        System.out.println("Enter PlainText");
+        String in=sb.nextLine().toUpperCase();
+        System.out.println("Enter Key:");
+        String key=sb.nextLine().toUpperCase();
+        int k=0;
         int sum=0;
         int d[][]=new int[in.length()][in.length()];
         int a[]=new int[in.length()];
-        int mul[]=new int[in.length()];
+        StringBuffer sc=new StringBuffer();
         for(int i=0;i<3;i++) {
             a[i]=in.charAt(i)-'A';
         for(int j=0;j<3;j++) {
@@ -16,28 +20,15 @@ public class Hill_Climber_Encryption_2D_Array {
             k++;
         }
         }
-        
         for(int i=0;i<a.length;i++) {
-            sum=0;
-            for(int j=0;j<a.length;j++) {
+            sum=0;           
+            int j=0;
                 for(int p=0;p<a.length;p++) {
-                    System.out.println(d[j][i]+"*"+a[p]);
                         sum+=d[i][j]*a[p];
+                        j++;
                     }
+                sc.append((char)((sum%26)+'A'));
             }
-                 System.out.println(sum);
-                 mul[i]=sum;
-            }
-        //diplay(d,key);
-        for(int i=0;i<a.length;i++) {
-            System.out.println(mul[i]);
-         }
+         System.out.println("Clipheretext:"+sc);
         }
-        static void diplay(int d[][],String key){
-        for(int i=0;i<3;i++) {
-            for(int j=0;j<3;j++) {
-                System.out.print(d[i][j]+" ");
-            }System.out.println();
-          }
-        }
-        }
+    }
