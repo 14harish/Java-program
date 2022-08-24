@@ -6,7 +6,7 @@ public static void main(String[] args) {
 	String name="Harish";
 	StringBuffer sc=new StringBuffer(name);
 //	System.out.println(arr.length);
-	int count=5;	
+	int count=4;	
 	   for(int j=0;j<name.length();j++) {
 		if(j==count-1) {
 			sc.deleteCharAt(j);

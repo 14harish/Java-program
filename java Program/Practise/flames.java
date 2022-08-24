@@ -3,29 +3,30 @@ import java.util.*;
 
 public class flames {
 public static void main(String[] args) {
-	String name="flames";
-	int count=4,c=0,c1=0;
-	LinkedList<String> s=new LinkedList<>();
-	for(String n:name.split("")) {
-		s.add(n);
-	}
-	int m=s.size();
-	for(int i=0;i<s.size();i++) {
-		c++;
-		c1++;
-		if(c==count) {
-			s.remove(i);
-			c=1;
+		int len=5,count=0,l=0;
+		StringBuffer sc=new StringBuffer(" FLAMES");
+		int arr[]=new int[sc.length()];
+		for(int i=0;i<arr.length;i++) {
+		char ch=sc.charAt(i);
+		//System.out.println(ch);
+		if(arr[i]!=-1) {
+		count++;
 		}
-		if(c1==m) {
-			c1=0;
+		if(count==len && sc.charAt(i)!=' ') {
+		arr[i]=-1;
+		count=-1;
+		sc.replace(i, i+1," ");
 		}
-		System.out.println(c+"="+s.get(i));
-		if(c1==s.size()-1) {
-			i=0;
+		if(i==arr.length-1) {
+		i=0;
+		}
+		String s= sc.toString();
+		s=s.replace(" ","");
+		if(s.length()==1) {
+		break;
+		}
+		}
+		System.out.println(sc);
+		}
 		}
 		
-	}
-	System.out.println(s);
-}
-}
