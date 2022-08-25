@@ -1,7 +1,11 @@
 import java.util.*;
+
 public class LexicologyRank {
     public static void main(String[] args) {
-        char[] s={'a','b','c'};
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the String:");
+        char[] s=sc.nextLine().toCharArray();
+        String m=new String(s);
         HashSet<String> h=new HashSet<>();
         while(true){
             h.add(shuffle(s));
@@ -11,12 +15,13 @@ public class LexicologyRank {
         }
         ArrayList<String> aa=new ArrayList<>(h);
         Collections.sort(aa);
-        String in=new String(s);
-        System.out.println(aa.indexOf(s));
-        // for(String e:aa){
-        //     System.out.println(e);
-        // }
+        for(int i=0;i<aa.size();i++){
+            if(m.equals(aa.get(i))){
+                System.out.println(i+1);
+            }
+        }
     }
+    //permutation
     static String shuffle(char se[]){
         Random rn=new Random();
         int s=rn.nextInt(se.length);
