@@ -13,9 +13,9 @@ public class Hill_Climber_Encryption_2D_Array {
         int d[][]=new int[in.length()][in.length()];
         int a[]=new int[in.length()];
         StringBuffer sc=new StringBuffer();
-        for(int i=0;i<3;i++) {
+        for(int i=0;i<in.length();i++) {
             a[i]=in.charAt(i)-'A';
-        for(int j=0;j<3;j++) {
+        for(int j=0;j<in.length();j++) {
             d[i][j]= key.charAt(k)-'A';
             k++;
         }
