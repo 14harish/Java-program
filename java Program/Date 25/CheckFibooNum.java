@@ -1,15 +1,18 @@
 public class CheckFibooNum {
     public static void main(String[] args) {
-        int a=0,b=1,c=0,num=27,count=0;
-        while(true){
+        int a=0,b=1,c=0,num=5,count=0;
+        if(num==1 ||num==0){
+            System.out.println("True");
+            return;
+        }
+        for(int i=0;i<num;i++){
             c=a+b;
-            b=a;
-            c=b;
-            System.out.println(c);
+            System.out.println(i+" "+num);
             if(c==num){
                 count=1;
-                break;
             }
+            a=b;
+            b=c;
         }
         if(count==1){
             System.out.println("True");
@@ -19,3 +22,4 @@ public class CheckFibooNum {
         }
     }
 }
+
