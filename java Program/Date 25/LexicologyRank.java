@@ -9,7 +9,9 @@ public class LexicologyRank {
                 break;
             }
         }
-        System.out.println(h);
+        for(String e:h){
+            System.out.println(e);
+        }
     }
     static String shuffle(char se[]){
         Random rn=new Random();
