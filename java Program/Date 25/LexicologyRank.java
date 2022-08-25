@@ -12,10 +12,10 @@ public class LexicologyRank {
         ArrayList<String> aa=new ArrayList<>(h);
         Collections.sort(aa);
         String in=new String(s);
-        aa.indexOf(s);
-        for(String e:aa){
-            System.out.println(e);
-        }
+        System.out.println(aa.indexOf(s));
+        // for(String e:aa){
+        //     System.out.println(e);
+        // }
     }
     static String shuffle(char se[]){
         Random rn=new Random();
