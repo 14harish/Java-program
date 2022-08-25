@@ -1,3 +1,5 @@
+
+//Not completed
 public class given_values_are_magic_square_or_not {
     public static void main(String[] args) {
         int arr[][]={{2,3,6},{9,5,1},{4,3,8}};
