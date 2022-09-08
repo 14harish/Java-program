@@ -1,5 +1,4 @@
 
-
 public class given_values_are_magic_square_or_not {
     public static void main(String[] args) {
         int arr[][]={{1,2,2},{2,2,1},{2,1,2}};
