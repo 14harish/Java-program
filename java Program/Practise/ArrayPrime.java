@@ -15,7 +15,7 @@ public class ArrayPrime {
         System.out.println("Prime Numbers:");
         for(int i=0;i<arr.length;i++){
             count=1;
-            for(int j=2;j<arr[i]/2;j++){
+            for(int j=2;j<=arr[i]/2;j++){
                 if(arr[i]%j==0){
                     count++;
                 }
