@@ -1,4 +1,3 @@
-import Practise.flames;
 
 public class FindSubArray {
     public static void main(String[] args) {
