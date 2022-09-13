@@ -9,8 +9,15 @@ public class HourGlassSum {
         // }
         // int k=0;
         for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr.length-1;j++){
-                System.out.print(arr[i][j]+" "+arr[i][j]);
+            for(int j=0;j<arr.length;j++){
+                // System.out.print(arr[i][j]+" "+arr[i][j]);
+                if(i==1 || i==4){
+                   System.out.println(i+" "+i);
+                    // sum+=arr[i][i];
+                  }
+                  else{
+                    //  sum+=arr[i][j];
+                  }
             }
             System.out.println();
         }
