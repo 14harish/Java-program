@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
-import java.*;
 public class union_instersection {
     public static void main(String[] args) {
         int a[]={12,45,62,98,5,28};
