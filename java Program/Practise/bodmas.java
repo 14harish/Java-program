@@ -1,4 +1,3 @@
-package Practise;
 
 public class bodmas {
 public static void main(String[] args) {

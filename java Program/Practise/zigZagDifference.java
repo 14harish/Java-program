@@ -1,4 +1,3 @@
-package Practise;
 
 public class zigZagDifference {
 public static void main(String[] args) {

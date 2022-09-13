@@ -1,4 +1,3 @@
-package Practise;
 
 public class EqualeDifference {
 public static void main(String[] args) {

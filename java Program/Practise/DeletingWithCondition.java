@@ -1,4 +1,3 @@
-package Practise;
 
 
 public class DeletingWithCondition {

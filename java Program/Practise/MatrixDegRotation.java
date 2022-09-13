@@ -1,4 +1,3 @@
-package Practise;
 //90 deg Rotation
 public class MatrixDegRotation {
     public static void main(String[] args) {

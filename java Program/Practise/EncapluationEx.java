@@ -1,4 +1,3 @@
-package Practise;
 
 	class Student{
 		int regno;
