@@ -1,7 +1,7 @@
 //abstraction is process of hiding the implementation detail for user
 //when declaring abstact class and abstract method that abstract method can be used in other class with different
 //condition by extending the abstract class
-package OOPS;
+//package OOPS;
 abstract class shop{
     abstract int fruitPrice();
 }
