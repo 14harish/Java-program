@@ -21,3 +21,4 @@ public class abstractEx {
        System.out.println("Fruit price in Localshop:"+s1.fruitPrice());
     }
 }
+    
