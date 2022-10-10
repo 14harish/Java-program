@@ -1,4 +1,4 @@
-package OOPS;
+//package OOPS;
 //for multilevel inheritance
 class A{
     void Afunc(){

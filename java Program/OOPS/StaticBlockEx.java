@@ -1,4 +1,4 @@
-package OOPS;
+//package OOPS;
 class sample{
     //stcatic block will exectute first when object is created for the class 
     sample(){
