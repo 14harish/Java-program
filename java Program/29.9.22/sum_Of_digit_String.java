@@ -1,4 +1,4 @@
-public class sum_Of_Digit_In_String {
+public class sum_Of_digit_String {
  public static void main(String[] args) { 
 	 String word="wlc22o3m";
 	 int sum=0;
