@@ -71,6 +71,41 @@ public class SingleLinkedList {
             temp.next=null; //and we are break the linking of the temp node to head by declaring temp next to null
             return null;
         }
+        public node delAtLast(){
+            if(head==null){
+                return null;
+            }
+            else{
+                node temp=head;
+                node p=null;
+                while(temp.next!=null){ //to travel before poistion
+                    p=temp;  //it will travel to last poistion
+                    temp=temp.next;
+                }
+                p.next=null; //to break The last poistion
+                return null;
+            }
+        }
+        public node delAtmid(int pos){
+            if(pos==1){
+                node t=head;
+                head=head.next;  // this is the procedure removing first node
+                t.next=null;
+                return null;
+            }
+            else{
+                node temp=head;  
+                int count=1;
+                while(count<pos-1){ //traveling till the before the poistion
+                    count++;
+                    temp=temp.next;
+                }
+                node p=temp.next; //p will store the temp value without losssing
+                temp.next=p.next; //p to next address will be stored int the tempt to next node for linking the next node
+                p.next=null; // remove the link between p to linked list
+                return null;
+            }
+        }
         public static void main(String[] args) {
             SingleLinkedList sl=new SingleLinkedList();
             sl.head=new node(10);
@@ -93,6 +128,11 @@ public class SingleLinkedList {
             sl.insertAtMiddle(100, 10);
             //deleting at beg
             sl.delAtBeg();
+            //delete at last
+            sl.delAtLast();
+            //deleting at midd
+            sl.delAtmid(3);
+            sl.delAtmid(7);
             //calling display Function
             sl.display();
             //finding the length of the linkedList
