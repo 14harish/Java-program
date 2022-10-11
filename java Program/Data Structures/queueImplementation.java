@@ -53,7 +53,7 @@ public class queueImplementation {
         if(isEmpty()){
             throw new NoSuchElementException("Queue is Empty");
         }
-        int result=front.data; //this is used for Display the which element is deleted
+      //  int result=front.data; //this is used for Display the which element is deleted
         front=front.next; //this is used point another element break the chain
         if(front==null){
             rear=null;
