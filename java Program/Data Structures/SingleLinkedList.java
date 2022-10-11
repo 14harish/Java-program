@@ -158,6 +158,19 @@ public class SingleLinkedList {
                 }
             }
         }
+        public void removeUsingKey(int key){
+            node temp=head;
+            node p=null;
+            if(temp!=null && temp.data!=key){
+                head=temp.next;
+            }
+            while(temp!=null && temp.data!=key){
+                p=temp;
+                temp=temp.next;
+            }
+            if(temp==null)return;
+            p.next=temp.next;
+        }
         public static void main(String[] args) {
             SingleLinkedList sl=new SingleLinkedList();
             sl.head=new node(10);
@@ -188,6 +201,8 @@ public class SingleLinkedList {
             sl.delAtmid(7);
             //searching the element
            System.out.println( sl.search(50));
+           //Delete the given value in the linkedList
+           sl.removeUsingKey(30);
            //Reverse the linked list
           sl.reverse();
           //Displaying Middle Element
