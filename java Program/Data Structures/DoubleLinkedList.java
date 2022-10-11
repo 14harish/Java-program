@@ -116,8 +116,26 @@ public class DoubleLinkedList {
         if(head==null){
             return head;
         }
-        
-        return null;
+        node temp=head;
+        node p=null;
+        node n=null;
+        while(temp!=null){
+            n=temp.right;
+            temp.right=p;
+            p=temp;
+            temp=n;
+        }
+        head=p;
+        return head;
+    }
+    public void middle(){
+        node temp=head;
+        node p=head;
+        while(temp!=null && temp.right!=null){
+            p=p.right;
+            temp=temp.right.right;
+        }
+        System.out.println(p.data);
     }
     public static void main(String[] args) {
         DoubleLinkedList dl=new DoubleLinkedList();
@@ -136,12 +154,14 @@ public class DoubleLinkedList {
         fourth.right=null;
 
         dl.DelAtbeg();
-        dl.insertAtbeg(80);
+        dl.insertAtbeg(30);
         dl.insertAtLast(90);
         dl.insertAtMiddle(100, 3);
         dl.delAtLast(); 
         dl.delAtmid(3);
         System.out.println(dl.search(30));
+        dl.Reverse();
+        dl.middle();
         dl.display();
         dl.size();
     }
