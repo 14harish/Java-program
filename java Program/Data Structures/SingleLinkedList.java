@@ -106,6 +106,58 @@ public class SingleLinkedList {
                 return null;
             }
         }
+        public boolean search(int key){
+            node temp=head;
+            while(temp!=null){
+                if(key==temp.data){
+                    return true;
+                }
+                temp=temp.next;
+            }
+            return false;
+        }
+        public node reverse(){
+            if(head==null){
+                return head;
+            }
+            node temp=head;
+            node p=null;
+            node n=null;
+            while(temp!=null){
+                n=temp.next;
+                temp.next=p;
+                p=temp;
+                temp=n;
+            }
+            head=p;
+            return head;
+        }
+        public node middle(){
+            if(head==null){
+                return head;
+            }
+            node temp=head;
+            node p=head;
+            while(temp!=null && temp.next!=null){
+                p=p.next;
+                temp=temp.next.next;
+            }
+            return p;
+        }
+        public void removeDup(){ //check
+            if(head==null){
+                return;                       
+             }
+            node temp=head;
+            while(temp!=null && temp.next!=null){
+                if(temp.data==temp.next.data){
+                    temp.next=temp.next.next;
+                }
+                else{
+                    temp=temp.next;
+                }
+            }
+        }
         public static void main(String[] args) {
             SingleLinkedList sl=new SingleLinkedList();
             sl.head=new node(10);
@@ -123,9 +175,10 @@ public class SingleLinkedList {
             //Inserting in the Last
             sl.insertAtLast(70);
             sl.insertAtLast(80);
+            sl.insertAtLast(50);
             //Inserting at specific poistion
             sl.insertAtMiddle(90, 3);
-            sl.insertAtMiddle(100, 10);
+            sl.insertAtMiddle(50, 10);
             //deleting at beg
             sl.delAtBeg();
             //delete at last
@@ -133,6 +186,14 @@ public class SingleLinkedList {
             //deleting at midd
             sl.delAtmid(3);
             sl.delAtmid(7);
+            //searching the element
+           System.out.println( sl.search(50));
+           //Reverse the linked list
+          sl.reverse();
+          //Displaying Middle Element
+          System.out.println(sl.middle().data);
+          //removing Duplicates
+          sl.removeDup();
             //calling display Function
             sl.display();
             //finding the length of the linkedList
