@@ -1,6 +1,6 @@
 
 public class SingleLinkedList {
-        public node head;
+    public node head;
        private static class node{
             int data;
             node next;
