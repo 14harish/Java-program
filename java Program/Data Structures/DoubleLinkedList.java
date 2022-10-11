@@ -76,6 +76,32 @@ public class DoubleLinkedList {
         temp.right=mid;
         mid.left=temp;
     }
+    public node delAtLast(){
+        if(head==null){
+            return null;
+        }
+        node temp=head;
+        while(temp.right!=null){
+            temp=temp.right;
+        }
+        temp.left.right=null;
+        return null;
+    }
+    public node delAtmid(int pos){
+        if(head==null){
+            return null;
+        }
+        node temp=head;
+        int count=1;
+        while(count<pos-1){
+            count++;
+            temp=temp.right;
+        }
+        node p=temp.right.right;
+        temp.right=p;
+        p.left=temp;
+        return null;
+    }
     public static void main(String[] args) {
         DoubleLinkedList dl=new DoubleLinkedList();
         dl.head=new node(10);
@@ -97,6 +123,8 @@ public class DoubleLinkedList {
         dl.insertAtbeg(80);
         dl.insertAtLast(90);
         dl.insertAtMiddle(100, 3);
+        dl.delAtLast();
+        dl.delAtmid(3);
         dl.display();
         dl.size();
 
