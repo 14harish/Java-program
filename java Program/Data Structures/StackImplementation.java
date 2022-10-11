@@ -28,8 +28,8 @@ public class StackImplementation {
 
     public void push(int data) {
         node temp = new node(data);
-        temp.next = top;
-        top = temp;
+        temp.next = top; //assinging link as top address 
+        top = temp; //assigning top to new data
         length++;
         System.out.println("Pushed Element:" + temp.data);
     }
@@ -46,7 +46,7 @@ public class StackImplementation {
             throw new EmptyStackException();
         }
         int result = top.data;
-        top = top.next;
+        top = top.next; //this will point next data as top and removing it
         length--;
         System.out.println("Poped Element:" + result);
     }
@@ -57,9 +57,7 @@ public class StackImplementation {
             System.out.println("|" + temp.data + "|");
             temp = temp.next;
         }
-        System.out.println("____");
     }
-
     public static void main(String[] args) {
         StackImplementation s = new StackImplementation();
         s.push(10);
