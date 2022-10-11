@@ -102,13 +102,29 @@ public class DoubleLinkedList {
         p.left=temp;
         return null;
     }
+    public boolean search(int value){
+        node temp=head;
+        while(temp!=null){
+            if(temp.data==value){
+                return true;
+            }
+            temp=temp.right;
+        }
+        return false;
+    }
+    public node Reverse(){
+        if(head==null){
+            return head;
+        }
+        
+        return null;
+    }
     public static void main(String[] args) {
         DoubleLinkedList dl=new DoubleLinkedList();
         dl.head=new node(10);
         node second=new node(20);
         node third=new node(30);
         node fourth=new node(40);
-        
         //linking double linked list
         dl.head.right=second;
         dl.head.left=null;
@@ -123,10 +139,10 @@ public class DoubleLinkedList {
         dl.insertAtbeg(80);
         dl.insertAtLast(90);
         dl.insertAtMiddle(100, 3);
-        dl.delAtLast();
+        dl.delAtLast(); 
         dl.delAtmid(3);
+        System.out.println(dl.search(30));
         dl.display();
         dl.size();
-
     }
 }
