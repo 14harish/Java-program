@@ -1,7 +1,7 @@
 
 public class LargestPalidrom {
 public static void main(String[] args) {
-String name="tamilmani";
+String name="template";
 char last = 0;
 StringBuffer n=new StringBuffer(name);
 String s=n.reverse().toString();
