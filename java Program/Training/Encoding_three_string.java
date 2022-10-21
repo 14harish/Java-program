@@ -1,3 +1,4 @@
+package Training;
 public class Encoding_three_string {
 public static void main(String[] args)
 {

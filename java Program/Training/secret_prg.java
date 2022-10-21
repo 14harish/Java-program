@@ -1,4 +1,4 @@
-
+package Training;
 public class secret_prg {
 public static void main(String[] args) {
 int input1=12;

@@ -1,4 +1,4 @@
-
+package Training;
 public class largest_palidrom {
 public static void main(String[] args) {
 String name="template";

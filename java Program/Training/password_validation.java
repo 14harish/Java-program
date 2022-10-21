@@ -1,6 +1,6 @@
-
+package Training;
 import java.util.*;
-public class password_validaton {
+public class password_validation {
 	 public static void main(String[] args) {
 	        char Cs = 64, Cl = 91, cs = 96, cl = 123;
 	        //System.out.println(c);

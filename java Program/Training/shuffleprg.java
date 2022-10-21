@@ -1,5 +1,6 @@
+package Training;
 import java.util.*;
-public class Shuffleprg {
+public class shuffleprg {
 	 static int st,st1;
 static ArrayList<String> output = new ArrayList<String>();
 
