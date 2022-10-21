@@ -1,5 +1,5 @@
 
-public class SecretPrg {
+public class secret_prg {
 public static void main(String[] args) {
 int input1=12;
 int input2=4;

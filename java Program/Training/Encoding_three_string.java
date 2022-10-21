@@ -1,4 +1,4 @@
-public class EncodigThreeString {
+public class Encoding_three_string {
 public static void main(String[] args)
 {
 String in1="harishrrr";

@@ -1,4 +1,5 @@
-public class sumofarray {
+
+public class Encode_array {
 public static void main(String[] args) {
 	int sum=0;
 	int arr[]= {8,-10,3,-15};

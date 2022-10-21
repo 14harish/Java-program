@@ -1,6 +1,6 @@
-package tenprogram;
+
 import java.util.*;
-public class passwordValidaton {
+public class password_validaton {
 	 public static void main(String[] args) {
 	        char Cs = 64, Cl = 91, cs = 96, cl = 123;
 	        //System.out.println(c);

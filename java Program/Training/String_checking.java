@@ -1,4 +1,4 @@
-public class StringChecking {
+public class string_checking {
 public static void main(String[] args) {
 String str1="HARISH";
 String str2="AIOP";

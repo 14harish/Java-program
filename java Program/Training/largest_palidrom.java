@@ -1,5 +1,5 @@
 
-public class LargestPalidrom {
+public class largest_palidrom {
 public static void main(String[] args) {
 String name="template";
 char last = 0;

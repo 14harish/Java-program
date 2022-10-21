@@ -1,4 +1,4 @@
-public class Circularindex {
+public class circularIndex {
     public static void main(String[] args) {
         String n="harishZ";
         char[] n2=new char[n.length()];

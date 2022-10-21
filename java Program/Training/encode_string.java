@@ -1,4 +1,4 @@
-public class EncodeString{
+public class encode_string{
 public static void main(String[] args) {
 String input="AM2x9";
 //259z4R18e

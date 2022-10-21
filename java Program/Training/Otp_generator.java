@@ -1,4 +1,4 @@
-public class otpgenerator {
+public class Otp_generator {
 public static void main(String[] args) {
 String name= "Karan";
 //System.out.println(name.length());
