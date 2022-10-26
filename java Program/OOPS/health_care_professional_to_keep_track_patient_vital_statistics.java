@@ -1,5 +1,3 @@
-import java.util.jar.Attributes.Name;
-
 class patient{
     String Name;
     double weight;
@@ -19,7 +17,7 @@ class patients{
     pc[0]=new patient("Arun",44,1.2);
     pc[1]=new patient("HarishR",55,1.2);
     pc[2]=new patient("viswanth",70,1.7);
-    pc[3]=new patient("divakaran uncle",77,1.2);
+    pc[3]=new patient("divakaran uncle",77.76,1.2);
     pc[4]=new patient("guru",66,1.2);
     pc[5]=new patient("deepak",44,1.7);
     pc[6]=new patient("veera",84,1.5);
