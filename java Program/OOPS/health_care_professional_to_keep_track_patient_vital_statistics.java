@@ -30,15 +30,19 @@ class patients{
 public void find(){
     System.out.println("--------------High IBM------------------:");
     for(int i=0;i<10;i++){
-        //System.out.print(pc[i].Name+":"+pc[i].IBM()+"\n");
         if(pc[i].IBM()>25){
             System.out.print(pc[i].Name+":"+pc[i].IBM()+"\n");
         }
     }
     System.out.println("--------------LOW IBM---------------------:");
     for(int i=0;i<10;i++){
-        //System.out.print(pc[i].Name+":"+pc[i].IBM()+"\n");
         if(pc[i].IBM()<25){
+            System.out.print(pc[i].Name+":"+pc[i].IBM()+"\n");
+        }
+    }
+    System.out.println("--------------NORMAL IBM---------------------:");
+    for(int i=0;i<10;i++){
+        if(pc[i].IBM()==25){
             System.out.print(pc[i].Name+":"+pc[i].IBM()+"\n");
         }
     }
