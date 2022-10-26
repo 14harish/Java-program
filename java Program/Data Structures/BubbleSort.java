@@ -7,7 +7,7 @@ public class BubbleSort {
                     temp=arr[j+1];
                     arr[j+1]=arr[j];
                     arr[j]=temp;
-                    j=-1;
+                    j=-1; //After swaping starting from first
                 }
             }
         for(int i=0;i<arr.length;i++){
