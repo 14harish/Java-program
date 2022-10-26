@@ -16,7 +16,7 @@ class stock{
 
 public class Stock_prg {
     public static void main(String[] args) {
-        stock s=new stock("dollar","$",7000,5000);
+        stock s=new stock("Divakaran Uncle home","#",25000,500000);
         System.out.println("Stock Name:"+s.stock_name+"\n"+"Stock Symbol:"+s.stock_symbol+"\n"+"percantage Gain:"+s.getchangePercentage()+"%");
     }
 }   
