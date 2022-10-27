@@ -39,24 +39,24 @@ int n=in1.length()/3,c=n;
 for(int i=0;i<in1.length();)
 {
  for(int j=0;j<a.length;j++)
- {
-  a[j]=in1.substring(i,n);
-i=i+c;
+ {                                //n,n+=1
+  a[j]=in1.substring(i,n);        //n,n+=1
+i=i+c;                            //n,n+=1
 n+=c;    
 }
 }
-}
+}                                    //n=0,l=stringlength/3
 else if(in1.length()%3==2)
 {
-a[0]=in1.substring(0,2);
-a[1]=in1.substring(2,3);
-a[2]=in1.substring(3,5);
+a[0]=in1.substring(0,2); //n,n=+l+1
+a[1]=in1.substring(2,3); //n,n+=1
+a[2]=in1.substring(3,5);//n,n+=1+1
 }
 else if(in1.length()%3==1)
 {
-a[0]=in1.substring(0,1);
-a[1]=in1.substring(1,3);
-a[2]=in1.substring(3,4);
+a[0]=in1.substring(0,1);//n,n+=1
+a[1]=in1.substring(1,3);//n,n+=1+1
+a[2]=in1.substring(3,4);//n,n+=1
 }
 return a;
 }
