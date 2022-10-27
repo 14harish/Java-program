@@ -28,7 +28,7 @@ public class SingleLinkedList {
         }
         public void insertAtbeg(int value){
             node beg=new node(value);
-            beg.next=head;
+            beg.next=head; 
             head=beg;
         }
         public void insertAtLast(int value){
