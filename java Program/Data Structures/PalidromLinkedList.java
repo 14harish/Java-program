@@ -24,6 +24,7 @@ class Solution {
             }
             else{
                 c=false;
+                break;
             }
             head=head.next;
         }
