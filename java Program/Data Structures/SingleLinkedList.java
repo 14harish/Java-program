@@ -28,6 +28,9 @@ public class SingleLinkedList {
         }
         public void insertAtbeg(int value){
             node beg=new node(value);
+            if(head==null){
+                head=beg;
+            }
             beg.next=head; 
             head=beg;
         }
@@ -46,6 +49,9 @@ public class SingleLinkedList {
         }
         public void insertAtMiddle(int value,int pos){
             node mid=new node(value);
+            if(head==null){
+                head=mid;
+            }
             if(pos==1){
                 mid.next=head;
                 head=mid;
@@ -173,15 +179,15 @@ public class SingleLinkedList {
         }
         public static void main(String[] args) {
             SingleLinkedList sl=new SingleLinkedList();
-            sl.head=new node(10);
-            node second=new node(20);
-            node third=new node(30);
-            node fourth=new node(40);   
+            // sl.head=new node(10);
+            // node second=new node(20);
+            // node third=new node(30);
+            // node fourth=new node(40);   
     
             //Linking the four node using single linked list
-            sl.head.next=second;
-            second.next=third;
-            third.next=fourth;
+            // sl.head.next=second;
+            // second.next=third;
+            // third.next=fourth;
             //Inserting in the Begining
             sl.insertAtbeg(50);
             sl.insertAtbeg(60);
