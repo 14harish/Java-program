@@ -30,26 +30,58 @@
                     console.log("Password:"+password);
                     console.log("Email:"+email);
                     console.log(password.length); 
-                    let 
+                    verifypassword(password);
+                    verifyEmail(email);
+                })
+                function verifypassword(password){
+                    event.preventDefault();
+                    let num=0,special=0,small=0,caps=0;
+                    let spe=['!','@','#','$','%','^','&','*','(',')'];
                     if(password.length==0){
                         alert("password Empty");
+                    }
+                    else if(password.includes(" ")){
+                        alert("password should not contain space");
                     }
                     else if(password.length<8){
                         alert("password length should be more than 8 alphanumeric");
                     }
-                    else if(password.charAt(0) != password.charAt(0).toUpperCase()){
-                        alert("First should be character with capus"+password.charAt(0));
+                    else if(!(password.charAt(0)>='a' && password.charAt(0)<='z' || password.charAt(0)>='A' && password.charAt(0)<='Z')){
+                        alert("First should be character:"+password.charAt(0));
                     }
                     else{
                         for(let i=0;i<password.length;i++){
-                            
+                            if(password.charAt(i)>='0' && password.charAt(i)<='9'){
+                                num++;
+                            }
+                            if(password.charAt(i)>='a' && password.charAt(i)<='z'){
+                                small++;
+                            }
+                            if(spe.includes(password.charAt(i))){
+                                special++;
+                            }
+                            if(password.charAt(i)>='A' && password.charAt(i)<='Z'){
+                                caps++;
+                            }
                         }
+                    if(caps<1){
+                    alert("Caps should more than one");
+                    }else if(small<2){
+                        alert("small should more than one");
+                    }else if(special<1){
+                        alert("Special character should more than one");
                     }
-                })
-                // function verifypassword(){
-                //     event.preventDefault();
-                   
-                // }
+                    else if(num<1){
+                        alert("Number should be more thaan one");
+                    }
+                    }
+                    
+                    // console.log("special"+special);
+                    // console.log("number"+num);
+                    // console.log("small"+small);
+                    // console.log('caps'+caps);
+                }
+                
         </script>
     </body>
 </html>
