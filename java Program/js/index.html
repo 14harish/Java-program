@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <form>
+            <label >Username:</label>
+            <input type="text" name="username" id="username">
+            <label>password:</label>
+            <input type="password" name="password" class="password">
+            <label>Email Id</label>
+            <input type="email" name="email" class="email">
+            <input type="submit" value="submit" id="sub">
+        </form>
+        <p id="demo"></p>
+        <!-- <script src="index.js"></script> -->
+        <script>
+            console.log("hi");
+                let n=document.getElementById('sub');
+                n.addEventListener("click",function(){
+                    event.preventDefault();
+                    let user=document.querySelector("#username").value;
+                    let password=document.querySelector(".password").value;
+                    let email=document.querySelector(".email").value;
+                    console.log("UserName:"+user);
+                    console.log("Password:"+password);
+                    console.log("Email:"+email);
+                    console.log(password.length); 
+                    let 
+                    if(password.length==0){
+                        alert("password Empty");
+                    }
+                    else if(password.length<8){
+                        alert("password length should be more than 8 alphanumeric");
+                    }
+                    else if(password.charAt(0) != password.charAt(0).toUpperCase()){
+                        alert("First should be character with capus"+password.charAt(0));
+                    }
+                    else{
+                        for(let i=0;i<password.length;i++){
+                            
+                        }
+                    }
+                })
+                // function verifypassword(){
+                //     event.preventDefault();
+                   
+                // }
+        </script>
+    </body>
+</html>
