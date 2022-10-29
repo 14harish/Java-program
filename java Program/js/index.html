@@ -30,7 +30,7 @@
                     console.log("Password:"+password);
                     console.log("Email:"+email);
                     console.log(password.length); 
-                    verifypassword(password);
+                    //verifypassword(password);
                     verifyEmail(email);
                 })
                 function verifypassword(password){
@@ -81,7 +81,10 @@
                     // console.log("small"+small);
                     // console.log('caps'+caps);
                 }
-                
+                function verifyEmail(email){
+                    event.preventDefault();
+
+                };
         </script>
     </body>
 </html>
