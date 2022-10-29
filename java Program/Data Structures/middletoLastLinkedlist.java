@@ -8,22 +8,22 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
-    public ListNode middleNode(ListNode head) {
-        ListNode temp=head;
+// class Solution {
+//     public ListNode middleNode(ListNode head) {
+//         ListNode temp=head;
         
-        int count=0;
-        while(temp!=null){
-            count++;
-            temp=temp.next;
-        }
-        int pos=count/2;
-        int c=0;
-        while(c<pos){
-            c++;
-            head=head.next;
-        }
-        ListNode p=head;
-        return p;
-    }
-}
+//         int count=0;
+//         while(temp!=null){
+//             count++;
+//             temp=temp.next;
+//         }
+//         int pos=count/2;
+//         int c=0;
+//         while(c<pos){
+//             c++;
+//             head=head.next;
+//         }
+//         ListNode p=head;
+//         return p;
+//     }
+// }
