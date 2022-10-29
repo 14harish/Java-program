@@ -30,6 +30,7 @@ public class SingleLinkedList {
             node beg=new node(value);
             if(head==null){
                 head=beg;
+                return;
             }
             beg.next=head; 
             head=beg;
@@ -38,6 +39,7 @@ public class SingleLinkedList {
             node last=new node(value);
             if(head==null){
                 head=last;
+                return;
             }
             else{
                 node temp=head;
@@ -51,6 +53,7 @@ public class SingleLinkedList {
             node mid=new node(value);
             if(head==null){
                 head=mid;
+                return;
             }
             if(pos==1){
                 mid.next=head;
@@ -114,8 +117,11 @@ public class SingleLinkedList {
         }
         public boolean search(int key){
             node temp=head;
+            int count=0;
             while(temp!=null){
+                count++;
                 if(key==temp.data){
+                    System.out.println(count);
                     return true;
                 }
                 temp=temp.next;
@@ -179,6 +185,16 @@ public class SingleLinkedList {
         }
         public static void main(String[] args) {
             SingleLinkedList sl=new SingleLinkedList();
+            sl.insertAtbeg(10);
+            sl.insertAtbeg(20);
+            sl.insertAtLast(30);
+            sl.insertAtLast(40);
+            sl.insertAtMiddle(70,3);
+            sl.delAtBeg();
+            sl.delAtLast();
+            sl.delAtmid(2);
+           System.out.println( sl.search(30));
+            sl.display();
             // sl.head=new node(10);
             // node second=new node(20);
             // node third=new node(30);
@@ -189,35 +205,35 @@ public class SingleLinkedList {
             // second.next=third;
             // third.next=fourth;
             //Inserting in the Begining
-            sl.insertAtbeg(50);
-            sl.insertAtbeg(60);
+                // sl.insertAtbeg(50);
+                // sl.insertAtbeg(60);
             //Inserting in the Last
-            sl.insertAtLast(70);
-            sl.insertAtLast(80);
-            sl.insertAtLast(50);
+                // sl.insertAtLast(70);
+                // sl.insertAtLast(80);
+                // sl.insertAtLast(50);
             //Inserting at specific poistion
-            sl.insertAtMiddle(90, 3);
-            sl.insertAtMiddle(50, 10);
+                // sl.insertAtMiddle(90, 3);
+                // sl.insertAtMiddle(50, 10);
             //deleting at beg
-            sl.delAtBeg();
+                // sl.delAtBeg();
             //delete at last
-            sl.delAtLast();
-            //deleting at midd
-            sl.delAtmid(3);
-            sl.delAtmid(7);
-            //searching the element
-           System.out.println( sl.search(50));
-           //Delete the given value in the linkedList
-           sl.removeUsingKey(30);
-           //Reverse the linked list
-          sl.reverse();
-          //Displaying Middle Element
-          System.out.println(sl.middle().data);
-          //removing Duplicates
-          sl.removeDup();
-            //calling display Function
-            sl.display();
-            //finding the length of the linkedList
-            sl.LengthOfList();
+            // sl.delAtLast();
+        //     //deleting at midd
+        //     sl.delAtmid(3);
+        //     sl.delAtmid(7);
+        //     //searching the element
+        //    System.out.println( sl.search(50));
+        //    //Delete the given value in the linkedList
+        //    sl.removeUsingKey(30);
+        //    //Reverse the linked list
+        //   sl.reverse();
+        //   //Displaying Middle Element
+        //   System.out.println(sl.middle().data);
+        //   //removing Duplicates
+        //   sl.removeDup();
+        //     //calling display Function
+        //     sl.display();
+        //     //finding the length of the linkedList
+        //     sl.LengthOfList();
         }
     }
