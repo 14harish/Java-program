@@ -14,10 +14,10 @@ public static int[] SelectionSort(int arr[]){
             if(arr[j]<arr[min]){
                 min=j;
             }
-            int temp=arr[min];
-            arr[min]=arr[i];
-            arr[i]=temp;
         }
+        int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
     }
     return arr;
 }
