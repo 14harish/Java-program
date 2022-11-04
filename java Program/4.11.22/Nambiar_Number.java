@@ -31,7 +31,12 @@ public class Nambiar_Number {
             }
            
         }
-        sc.append(str.charAt(str.length()-1));
+        if(sum==str.charAt(str.length()-1)-'0'){
+            sc.append(str.charAt(str.length()-1));
+        }else{
+            sc.append((sum+str.charAt(str.length()-1))-'0');
+        }
+        
         System.out.println(sc);
 
     }    
