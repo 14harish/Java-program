@@ -28,8 +28,7 @@ public class Nambiar_Number {
                     System.out.println(s);
                     i++;
                 }
-            }
-           
+            }  
         }
         if(sum==str.charAt(str.length()-1)-'0'){
             sc.append(str.charAt(str.length()-1));
