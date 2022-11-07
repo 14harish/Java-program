@@ -4,7 +4,7 @@ class TestHumano
 {
 public static void main(String s[])
 {
-    String arr[]={"1783","367","5973"};
+    String arr[]={"10","567", "597", "27","783"};
     StringBuffer sc=new StringBuffer();
     FindLuckyDigit f=new FindLuckyDigit ();
     ArrayList<Integer> al=new ArrayList<Integer>();
@@ -17,8 +17,18 @@ String c=sc.toString();
 char a[]=c.toCharArray();
   //  System.out.println(sc);
     int g=f. luckyDigit (arr,a);
-    System.out.println(g);
-    System.out.println(f.prime(g));
+    // System.out.println(g);
+    //  System.out.println(f.prime(g));
+    if(f.prime(g)){
+        System.out.println("Luckiest Number is:"+g);
+    }
+    else{
+        int h=g;
+        while(f.prime(h)!=true){
+            h=h+1;
+        }
+        System.out.println("Luckiest Number is:"+h);
+    }
 }
 }
 class FindLuckyDigit
@@ -43,27 +53,38 @@ for(int i=0;i<sc.length;i++){
    }
 }
 ArrayList<Character> j=new ArrayList<>(h);
-int sum=0,n=0,v=0;;
+int sum=0,n=0,v=0;
 if(h.size()>1){
     for(int i=0;i<h.size();i++){
         sum+=j.get(i)-'0';
     }
-   
-    while(sum!=0){
-        int s=sum/10;
-        v+=s;
-        s=s%10;
-    }
 }
+
+if(sum>=10){
+while(sum!=0){
+    int s=sum%10;
+    v+=s;
+    sum=sum/10;
+}}
+else if(h.size()==0){
+    v=-99;
+}
+else{
+    v=j.get(0)-'0';
+}
+
 return v;
 }
 public static boolean prime(int n){
    boolean check=true;
-    for(int i=0;i<n/2;i++){
-    for(int j=2;j<n;j++){
-        if(j%n==0){
-            check=false;
-        }
+   if(n==0 || n==1){
+    check=false;
+   }
+   for(int i=2;i<=n/2;i++){
+    // System.out.println(i);
+    if(n%i==0){
+        check=false;
+        break;
     }
    }
    return check;    
