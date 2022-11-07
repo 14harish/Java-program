@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.Arrays;import java.text.SimpleDateFormat;import java.util.Date;
 
 class Test {
         public static void main(String args[]) {
@@ -14,6 +14,12 @@ class Test {
         String na="harish";
         String ne="HArish";
         System.out.println(na.equalsIgnoreCase(ne));
+        // System.currentTimeMillis();
+        Date d=new Date(System.currentTimeMillis());
+        SimpleDateFormat d1=new SimpleDateFormat("yyyy/MM/dd");
+       String currdate= d1.format(d);
+       System.out.println(currdate);
+  
         // System.out.println(arr);
         }
         }
