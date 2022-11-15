@@ -6,6 +6,7 @@ public class subsequence_sf_Strings {
         for(int i=0;i<arr.length;i++){
             System.out.println(check(arr[i], s));
         }
+        System.out.println('z'-'a');
     }
     public static boolean check(String a,String s){
         boolean che=true;
