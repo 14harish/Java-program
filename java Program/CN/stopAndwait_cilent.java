@@ -21,7 +21,7 @@ public class stopAndwait_cilent {
             }
             System.out.println("Frames "+i+" Send");
             s.println(i);
-            Scanner v=new Scanner(new InputStreamReader(input.getInputStream()));
+            Scanner v=new Scanner(input.getInputStream());
             String ack=v.next();
             System.out.println(ack);
             if(ack!=null){
