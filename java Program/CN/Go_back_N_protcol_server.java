@@ -7,6 +7,6 @@ import java.util.Scanner;
 
 public class Go_back_N_protcol_server {
     public static void main(String args[]) throws Exception{
-    
+        
     }
 }
