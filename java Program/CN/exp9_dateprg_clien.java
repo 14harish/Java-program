@@ -4,10 +4,11 @@ import java.util.*;
 
 public class exp9_dateprg_clien{
     public static void main(String[] args) throws IOException {
-        Socket s =new Socket("localhost",9999);
-        Scanner scan = new Scanner(s.getInputStream());
-        String date = scan.nextLine();
-        System.out.println(date);
-        s.close();
+        Socket n=new Socket("localhost",9999);
+        Scanner sc=new Scanner(n.getInputStream());
+        String da=sc.nextLine();
+        System.out.println(da);
+        n.close();
+        sc.close();
     }
 }

@@ -5,14 +5,13 @@ import java.util.Date;
 
 public class exp9_dateprg_serv{
     public static void main(String[] args) throws IOException {
-        ServerSocket ser =new ServerSocket(9999);
-        while (true) {
-            System.out.println("waiting for connection .....");
-            Socket s =ser.accept();
-            DataOutputStream wri =new DataOutputStream(s.getOutputStream());
-            wri.writeBytes("Date of the server is : "+(new Date().toString()));
-            s.close();
-            wri.close();
-        }
+     ServerSocket sv=new ServerSocket(9999);
+     while(true){
+        Socket s=sv.accept();
+        DataOutputStream d=new DataOutputStream(s.getOutputStream());
+        d.writeBytes("Server Date"+(new Date()).toString());
+        s.close();
+        d.close();
+     }
     }
 }
