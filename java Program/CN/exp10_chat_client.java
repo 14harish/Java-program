@@ -14,7 +14,7 @@ public class exp10_chat_client {
             buf = inp.getBytes();
             DatagramPacket dp = new DatagramPacket(buf, buf.length, ip, 9999);
             ds.send(dp);
-            System.out.println("Buf");
+            System.out.println(buf);
             if (inp.equals("bye")) {
                 break;
             }
