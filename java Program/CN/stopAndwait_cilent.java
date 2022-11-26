@@ -23,7 +23,7 @@ public class stopAndwait_cilent {
             s.println(i);
             Scanner v=new Scanner(input.getInputStream());
             String ack=v.next();
-            System.out.println(ack);
+            // System.out.println(ack);
             if(ack!=null){
                 System.out.println("Ack is Recived");
                 i++;

@@ -18,13 +18,11 @@ public class stopAndWait_Server {
     while(temp.compareTo(str)!=0){
         temp=get.next();
         if(temp.compareTo(str)==0){
-            System.out.println("heei");
             break;
         } 
         System.out.println("Recived "+temp+" Successfully");
         Thread.sleep(5000);
-        write.print("Recived");
-        System.out.println("hi");
+        write.println("Recived");
     }
     System.out.println("All Data Recieved Successfully");
     sc.close();

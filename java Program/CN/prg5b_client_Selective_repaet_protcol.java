@@ -13,7 +13,7 @@ public class prg5b_client_Selective_repaet_protcol {
         DataOutputStream d = new DataOutputStream(s.getOutputStream());
 
         int len = di.read();
-        int arr[] = new int[5];
+        int arr[] = new int[len];
         pos = rand.nextInt(len);
         arr[pos] = -1;
         for (int i = 0; i < arr.length; i++) {
@@ -22,8 +22,10 @@ public class prg5b_client_Selective_repaet_protcol {
             }
         }
         d.write(pos);
-        arr[pos] = di.read();
 
-        System.out.println("pos Send Successfully");
+        System.out.println("pos Send Successfully" + pos);
+        arr[pos] = di.read();
+        System.out.println(arr[pos]);
+
     }
 }

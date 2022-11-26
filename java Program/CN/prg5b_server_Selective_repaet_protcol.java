@@ -16,10 +16,10 @@ public class prg5b_server_Selective_repaet_protcol {
 
         System.out.println("Number packet Sent:"+arr.length);
         d.write(arr.length);
-        d.flush();
+        // d.flush();
         for(int i=0;i<arr.length;i++){
             d.write(arr[i]);
-            d.flush();
+            // d.flush();
         }
         int pos=di.read();
         d.write(pos);
