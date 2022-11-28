@@ -52,7 +52,7 @@ public class crc {
             System.out.println((i+1)+" First Data bit "+rem[0]);
             if(rem[0]==1){
                 for(int j=1;j<rem.length;j++){
-                    rem[j-1]=xor(rem[j],data[j]);
+                    rem[j-1]=xor(rem[j],divisor[j]);
                 }
             }
             else{
