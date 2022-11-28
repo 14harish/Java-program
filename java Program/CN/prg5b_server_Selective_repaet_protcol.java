@@ -18,11 +18,12 @@ public class prg5b_server_Selective_repaet_protcol {
         d.write(arr.length);
         // d.flush();
         for(int i=0;i<arr.length;i++){
+            System.out.println("frames Sent"+i);
             d.write(arr[i]);
             // d.flush();
         }
         int pos=di.read();
-        d.write(pos);
+        d.write(arr[pos]);
         } 
         catch(Exception E){
             System.out.println(E);

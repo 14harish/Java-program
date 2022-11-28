@@ -18,14 +18,15 @@ public class prg5b_client_Selective_repaet_protcol {
         arr[pos] = -1;
         for (int i = 0; i < arr.length; i++) {
             if (i != pos) {
+                System.out.println("frames Received"+i);
                 arr[i] = di.read();
             }
         }
         d.write(pos);
 
-        System.out.println("pos Send Successfully" + pos);
+        System.out.println("pos retaransmit Successfully" + pos);
         arr[pos] = di.read();
-        System.out.println(arr[pos]);
+        // System.out.println(arr[pos]);
 
     }
 }
