@@ -7,7 +7,6 @@ public class StaticChecking {
                 System.out.println(tail.a); //static only refer with class name we cannot refer with object 
                 System.out.println(d.b); //instace variable can refer only with object 
             }       
-   
     }
     
     class tail{
