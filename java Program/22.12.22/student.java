@@ -1,27 +1,29 @@
-
+import java.util.*;
 class Detail{
     int regNo;
     String college;
     String dpet;
-    Detail(int regNo,String college,String dpet){
-        this.regNo=regNo;
-        this.college=college;
-        this.dpet=dpet;
-    }
+    
+    Scanner Sc=new Scanner(System.in);
+    
     void getdata(){
-        
+        System.out.println(this.regNo+" "+this.college+" "+this.dpet);
     }
     void setdata(){
-        
-    }
-    public void display(){
-        System.out.println(this.regNo+" "+this.college+" "+this.dpet);
+        System.out.println("Enter the RegNo");
+        regNo=Sc.nextInt();
+        Sc.nextLine();
+        System.out.println("Enter the college");
+        college=Sc.nextLine();
+        System.out.println("Enter the Dept");
+        dpet=Sc.nextLine();
     }
 }
 public class student {
     public static void main(String[] args) {       
-         Detail d=new Detail(30, null, null);
-         d.display();
+         Detail d=new Detail();
+         d.setdata();
+         d.getdata();
     }
 }
 
