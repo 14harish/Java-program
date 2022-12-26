@@ -10,7 +10,7 @@ public class Nambiar_Number {
         for(int i=0;i<str.length()-1;i++){
             // System.out.println(s);
             if(s%2==0){
-                System.out.println(s);
+                // System.out.println(s);
                 sum+=str.charAt(i)-'0';
                 if(sum%2!=0){
                     sc.append(sum);
