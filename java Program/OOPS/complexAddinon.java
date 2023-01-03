@@ -18,6 +18,6 @@ public class complexAddinon {
     public static void main(String[] args) {
         complex c1=new complex(10, 11);
         complex c2=new complex(2,3);
-        System.out.println(c1.addMethod(c2));
+        System.out.println(c1.addMethod(c2)); //passing object to method
     }
 }

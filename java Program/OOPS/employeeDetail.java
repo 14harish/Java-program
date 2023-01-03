@@ -19,7 +19,7 @@ public class employeeDetail {
         System.out.println("Enter the No of Employee");
         int s=sc.nextInt();
         sc.nextLine();
-        employee emp[]=new employee[3]; 
+        employee emp[]=new employee[3]; //creating object array and storing the value in array
         for(int i=0;i<s;i++){
             System.out.println("Enter the Name");
             String n=sc.nextLine();
