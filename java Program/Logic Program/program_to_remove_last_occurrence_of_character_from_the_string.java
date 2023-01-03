@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class program_to_remove_last_occurrence_of_character_from_the_string {
     public static void main(String[] args) {
         String inp="I love programming. I love Codeforwin I basdjksahdkj Iasbfdjk";
@@ -11,5 +13,6 @@ public class program_to_remove_last_occurrence_of_character_from_the_string {
         }
         sc.replace(index, index+1, "");
         System.out.println(sc);
+        HashSet <Integer> s=new HashSet<>();
     }
 }
