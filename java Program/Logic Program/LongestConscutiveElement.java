@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class LongestConscutiveElement {
     public static void main(String[] args) {
-        int arr[]={49, 1, 3, 65, 2, 4, 5,50,51,52,53,54,55,2,1};
+        int arr[]={1,2,3,4,5,6,17,18,19,20,21,22,23,24,45};//{49, 1, 3, 65, 2, 4, 5,50,51,52,53,54,55,2,1}
         HashSet<Integer> h=new HashSet<>();
         for (int i : arr) {
             // System.out.println(i);
