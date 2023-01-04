@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int arr[]={1,22,33,4,55,6,88,77,7}; 
@@ -14,6 +16,7 @@ public class BubbleSort {
                 arr[j+1]=arr[j];
                 arr[j]=temp;
                 j=-1; //After swaping starting from first
+                // System.out.println(Arrays.toString(arr));
             }
         }
         return arr;
