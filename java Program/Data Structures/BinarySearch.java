@@ -18,7 +18,7 @@ public class BinarySearch {
                 return mid;
             }
             else if(arr[mid]<k){
-              return search(arr,k,mid+1,h);
+              return search(arr,k,mid+1,h); //l ,h ,mid are the index
             }
             else{
               return search(arr,k,l,mid-1);
