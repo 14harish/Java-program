@@ -11,19 +11,19 @@ public class CaluculatingPlatform {
                 // count--;
             }else{
                 //with for loop
-                // for(int j=i;j<depature.length;j++){
-                    //     // System.out.println(arival[j+1]+"---"+depature[i]);
-                    //     if(arival[j+1]>depature[i]){
-                   //         break;
-                    //     }
-                  //     count++;
-                 // }  
+                for(int j=i;j<depature.length;j++){
+                        System.out.println(arival[j+1]+"---"+depature[i]);
+                        if(arival[j+1]>depature[i]){
+                           break;
+                        }
+                      count++;
+                 }  
                  //with while loop
-                int j=i;
-                while(arival[j+1]<=depature[i]){
-                    count++;
-                    j++;
-                }
+                // int j=i;
+                // while(arival[j+1]<=depature[i]){
+                //     count++;
+                //     j++;
+                // }
              }
             //  System.out.println(count);
              if(count>max){
