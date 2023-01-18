@@ -129,21 +129,33 @@ public class SingleLinkedList {
             return false;
         }
         public node reverse(){
-            if(head==null){
-                return head;
-            }
-            node temp=head;
-            node p=null;
-            node n=null;
-            while(temp!=null){
-                n=temp.next;
-                temp.next=p;
-                p=temp;
-                temp=n;
+            // if(head==null){
+            //     return head;
+            // }
+            // node temp=head;
+            // node p=null;
+            // node n=null;
+            // while(temp!=null){
+            //     n=temp.next;
+            //     temp.next=p;
+            //     p=temp;
+            //     temp=n;
+            // }
+            // head=p;
+            // return head;
+            // return head;
+             node temp=head;
+             node p=null;
+             node n=null;
+             while(temp!=null){
+                 n=temp.next;
+                 temp.next=p;
+                 p=temp;
+                 temp=n;
             }
             head=p;
             return head;
-        }
+            }
         public node middle(){
             if(head==null){
                 return head;
@@ -194,7 +206,7 @@ public class SingleLinkedList {
             sl.delAtLast();
             sl.delAtmid(2);
            System.out.println( sl.search(30));
-            sl.display();
+          
             // sl.head=new node(10);
             // node second=new node(20);
             // node third=new node(30);
@@ -205,8 +217,8 @@ public class SingleLinkedList {
             // second.next=third;
             // third.next=fourth;
             //Inserting in the Begining
-                // sl.insertAtbeg(50);
-                // sl.insertAtbeg(60);
+                sl.insertAtbeg(50);
+                sl.insertAtbeg(60);
             //Inserting in the Last
                 // sl.insertAtLast(70);
                 // sl.insertAtLast(80);
@@ -235,5 +247,7 @@ public class SingleLinkedList {
         //     sl.display();
         //     //finding the length of the linkedList
         //     sl.LengthOfList();
+        sl.reverse();
+        sl.display();
         }
     }
