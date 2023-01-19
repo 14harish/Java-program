@@ -1,6 +1,6 @@
 public class RotateString {
     public static void main(String args[]){
-    String val="geeks";
+    String val="aaaa";
     String dup=val;
     String a="";
     // for(int i=1;i<5;i++){
@@ -15,6 +15,6 @@ public class RotateString {
         val=a;
         count++;
     }
-    System.out.println(count);
+       System.out.println(count);
     }
 }
