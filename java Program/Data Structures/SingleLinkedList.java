@@ -129,21 +129,6 @@ public class SingleLinkedList {
             return false;
         }
         public node reverse(){
-            // if(head==null){
-            //     return head;
-            // }
-            // node temp=head;
-            // node p=null;
-            // node n=null;
-            // while(temp!=null){
-            //     n=temp.next;
-            //     temp.next=p;
-            //     p=temp;
-            //     temp=n;
-            // }
-            // head=p;
-            // return head;
-            // return head;
              node temp=head;
              node p=null;
              node n=null;
@@ -247,6 +232,8 @@ public class SingleLinkedList {
         //     sl.display();
         //     //finding the length of the linkedList
         //     sl.LengthOfList();
+        sl.reverse();
+        sl.display();
         sl.reverse();
         sl.display();
         }

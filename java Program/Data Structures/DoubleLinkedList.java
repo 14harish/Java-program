@@ -113,19 +113,17 @@ public class DoubleLinkedList {
         return false;
     }
     public node Reverse(){
-        if(head==null){
-            return head;
-        }
         node temp=head;
         node p=null;
         node n=null;
         while(temp!=null){
-            n=temp.right;
-            temp.right=p;
-            p=temp;
-            temp=n;
+            p=temp.right;
+            temp.left=p;
+            temp.right=n;
+            n=temp;
+            temp=p;
         }
-        head=p;
+        head=n;
         return head;
     }
     public void middle(){
@@ -153,16 +151,19 @@ public class DoubleLinkedList {
         fourth.left=third;
         fourth.right=null;
 
-        dl.DelAtbeg();
-        dl.insertAtbeg(30);
-        dl.insertAtLast(90);
-        dl.insertAtMiddle(100, 3);
-        dl.delAtLast(); 
-        dl.delAtmid(3);
-        System.out.println(dl.search(30));
-        dl.Reverse();
-        dl.middle();
+        // dl.DelAtbeg();
+        // dl.insertAtbeg(30);
+        // dl.insertAtLast(90);
+        // dl.insertAtMiddle(100, 3);
+        // dl.delAtLast(); 
+        // dl.delAtmid(3);
+        // System.out.println(dl.search(30));
+        // dl.Reverse();
+        // dl.middle();
+        // dl.size();
+        // dl.Reverse();
         dl.display();
-        dl.size();
+        dl.Reverse();
+        dl.display();
     }
 }
