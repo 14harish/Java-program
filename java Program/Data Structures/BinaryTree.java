@@ -13,7 +13,7 @@ public class BinaryTree {
     void insert(int d){
         node n=new node(d);
         if(root==null){
-            root=n;
+            root=n; 
             return;
         }
         node temp=root;
