@@ -41,7 +41,7 @@ public class StackImplementation {
         System.out.println("Top of the Element :" + top.data);
     }
 
-    public void pop() {
+    public void pop() {d
         if (isEmpty()) {
             throw new EmptyStackException();
         }
