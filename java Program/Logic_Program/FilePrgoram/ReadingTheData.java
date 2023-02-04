@@ -16,10 +16,8 @@ public class ReadingTheData{
             String line2[]=line.split(" ");
             System.out.println(Arrays.toString(line2));
             for(int i=0;i<line2.length;i++){
-                // System.out.println(line2[i].length());
             for(int j=0;j<line2[i].length();j++){
               if((line2[i].charAt(j)>'a' && line2[i].charAt(j)<'z') || (line2[i].charAt(j)>'A' && line2[j].charAt(j)<'Z')){
-                    //  System.out.println(line2[i].charAt(j));
                      count++;
                  }
             }
