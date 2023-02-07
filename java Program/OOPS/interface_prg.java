@@ -1,10 +1,13 @@
 interface top{
     int getInterest();
 }
-interface Bank extends top{
+// interface Bank extends top{
+//     void Setintrest(int n);
+// }
+interface Bank{
     void Setintrest(int n);
 }
-class sbi implements Bank{
+class sbi implements Bank,top{
     int inter;
     @Override
     public void Setintrest(int inter) {
@@ -15,7 +18,7 @@ class sbi implements Bank{
         return inter;
     }
 }
-class icic implements Bank{
+class icic implements Bank,top{
     int inter;
     @Override
     public void Setintrest(int inter) {
@@ -29,8 +32,10 @@ class icic implements Bank{
 }
 public class interface_prg {
     public static void main(String[] args) {
-       Bank b=new sbi();
-       Bank c=new icic();
+       sbi b=new sbi();
+       icic c=new icic();
+    // Bank b=new sbi();
+    // Bank c=new icic();
        b.Setintrest(10);
        c.Setintrest(12);
        System.out.println(b.getInterest()+" "+c.getInterest());
