@@ -1,6 +1,7 @@
-abstract class Sample{
-    abstract void calculate(int a,int b);
-    abstract void check();
+class Sample{
+    // abstract void calculate(int a,int b);
+    // abstract void check();
+    int data=10*2;
 }
 class Addition extends Sample{
      void calculate(int a ,int b){
@@ -8,6 +9,7 @@ class Addition extends Sample{
      }
      void check(){
         System.out.println("check1");
+        System.out.println(data);
      }
 }
 class Subtraction extends Sample{

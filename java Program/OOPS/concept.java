@@ -7,11 +7,11 @@ public class concept {
             System.out.println(Detail.regNo);
         }
 }
+
 class Detail{
     static int regNo;
     String college;
     String dpet;
-    
     Scanner Sc=new Scanner(System.in);
     Detail(){
         // this.getdata();
