@@ -1,20 +1,30 @@
 abstract class Sample{
     abstract void calculate(int a,int b);
+    abstract void check();
 }
-class Addition extends sample{
+class Addition extends Sample{
      void calculate(int a ,int b){
         System.out.println(a+b);
      }
+     void check(){
+        System.out.println("check1");
+     }
 }
-class Subtraction extends sample{
+class Subtraction extends Sample{
     void calculate(int a ,int b){
        System.out.println(a-b);
     }
+    void check(){
+        System.out.println("check2");
+     }
 }
-class Multiplication extends sample{
-    void calculate(int a ,int b){
-       System.out.println(a*b);
+class Multiplication extends Sample{
+    void calculate(int c ,int d){
+       System.out.println(c*d);
     }
+    void check(){
+        System.out.println("check3");
+     }
 }
 
 public class abstractEx2 {
@@ -25,5 +35,8 @@ public class abstractEx2 {
         a.calculate(10, 20);
         s.calculate(10, 20);
         m.calculate(10, 20);
+        a.check();
+        s.check();
+        m.check();
     }
 }

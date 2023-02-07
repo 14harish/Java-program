@@ -1,7 +1,7 @@
 //package OOPS;
-class sample{
+class apple{
     //stcatic block will exectute first when object is created for the class 
-    sample(){
+    apple(){
         //this is also same as satic this will also execute when the object is created for the class 
         System.out.println("Inside the constructor");
     }
@@ -19,6 +19,6 @@ class sample{
 
 public class StaticBlockEx {
     public static void main(String[] args) {
-        sample s=new sample();
+        apple s=new apple();
     }
 }

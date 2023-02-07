@@ -5,10 +5,6 @@ public class concept {
             Detail e=new Detail();
             Detail.regNo=10;
             System.out.println(Detail.regNo);
-            // e.setdata();
-            // d.setdata();
-            // d.getdata();
-            // e.getdata();
         }
 }
 class Detail{
