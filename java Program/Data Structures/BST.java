@@ -9,7 +9,6 @@ class BinaryTree{
         this.data=data;
         this.right=null;
         this.left=null;
-
     }
 }
 boolean insert(int data){
@@ -48,11 +47,98 @@ boolean contains(int data){
         }
         else if(temp.data<n.data){
             temp=temp.right;
-        }else{
+        }else if(n.data==temp.data){
             return true;
         }
     }
     return false;
+}
+void preorder(){
+    if(root==null){
+        System.out.println("NULL");
+    }
+    preorder(root);    
+    System.out.println("\n");   
+}
+void preorder(node root){
+    node temp=root;
+    if(temp==null){
+        return;
+    }
+    System.out.print(temp.data+"--->");
+    preorder(temp.left);
+    preorder(temp.right);
+}
+void inorder(){
+    if(root==null){
+        System.out.println("NULL");
+    }
+    inorder(root);    
+    System.out.println("\n");   
+}
+void inorder(node root){
+    node temp=root;
+    if(temp==null){
+        return;
+    }
+    inorder(temp.left);
+    System.out.print(temp.data+"--->");
+    inorder(temp.right);
+}
+void postorder(){
+    if(root==null){
+        System.out.println("NULL");
+    }
+    postorder(root); 
+    System.out.println("\n");   
+}
+void postorder(node root){
+    node temp=root;
+    if(temp==null){
+        return;
+    }
+    postorder(temp.left);
+    postorder(temp.right);
+    System.out.print(temp.data+"--->");
+}
+void delete(int data){
+    if(contains(data)){
+        delete(root,data);
+    }else{
+        System.out.println("data");
+    }
+}
+public node delete(node temp,int data){
+    if(data>temp.data){
+        temp.right=delete(temp.right, data);
+    }else if(data<temp.data){
+        temp.left=delete(temp.left, data);
+    }else if(data==temp.data){
+        if(temp.left==null && temp.right==null){
+            temp=null;
+        }else if(temp.right!=null){
+            temp.data=rightTrav(temp);
+            temp.right=delete(temp.right, data);
+        }else if(temp.left!=null){
+            temp.data=lefTrav(temp);
+            temp.left=delete(temp.left, data);
+        }
+    }
+    return temp;
+}
+int rightTrav(node rig){
+    rig=rig.right;
+    while(rig.right!=null){
+        rig=rig.right;
+    }
+    return rig.data;
+}
+int lefTrav(node lef){
+    lef=lef.right;
+    while(lef.left!=null){
+        lef=lef.right;
+    }
+    return lef.data;
 }
 }
 
@@ -65,8 +151,17 @@ public class BST {
         b.insert(8);
         b.insert(40);
         b.insert(30);
-        System.out.println(b.root.left.right.data);
+        b.insert(50);
+        b.insert(20);
+
+        // System.out.println(b.root.left.right.data);
         System.out.println(b.contains(111));
+        b.preorder();
+        b.postorder();
+        b.inorder();
+        System.out.println("After Deletion...");
+        b.delete(40);
+        b.preorder();
 
     }
 }
