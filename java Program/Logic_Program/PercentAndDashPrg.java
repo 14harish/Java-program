@@ -1,18 +1,20 @@
 import java.util.ArrayList;
 
-public class removing_N_digit_from_Integer{
+public class PercentAndDashPrg{
     public static void main(String args[]){
-        String str="Hello welc to ewKSR Collegew Tiruchengode";
-        String con="_wKS_";
+        String str="I like Coffee verymuch";
+        String con="___e";
         String[] arr=str.split(" ");
         int per=con.indexOf("%");
         int n=0;
         if(con.charAt(0)=='%' && con.charAt(con.length()-1)=='%'){
             n=1;
-        }else if(con.charAt(con.length()-1)=='%'){
-            n=2;
-        }else{
+        }
+        else if(con.charAt(0)=='%'){
             n=0;
+        }
+        else{
+            n=2;
         }
         int dash=con.indexOf("_");
         ArrayList<String> a=new ArrayList<>();
@@ -26,6 +28,7 @@ public class removing_N_digit_from_Integer{
                 }
                }
                else if(n==2){
+                //    System.out.println("hi");
                  int index=arr[i].indexOf(s);
                  if(index==(arr[i].length()-s.length())){
                     a.add(arr[i]);
