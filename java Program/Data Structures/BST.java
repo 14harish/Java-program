@@ -119,23 +119,23 @@ class BinaryTree {
         }
     }
 
-    public node delete(node temp, int data) {
-        if (data > temp.data) {
-            temp.right = delete(temp.right, data);
-        } else if (data < temp.data) {
-            temp.left = delete(temp.left, data);
-        } else if (data == temp.data) {
-            if (temp.left == null && temp.right == null) {
-                temp = null;
-            } else if (temp.right != null) {
-                temp.data = rightTrav(temp);
-                temp.right = delete(temp.right, data);
-            } else if (temp.left != null) {
-                temp.data = lefTrav(temp);
-                temp.left = delete(temp.left, data);
+    public node delete(node root, int data) {
+        if (data > root.data) {
+            root.right = delete(root.right, data);
+        } else if (data < root.data) {
+            root.left = delete(root.left, data);
+        } else if (data == root.data) {
+            if (root.left == null && root.right == null) {
+                root = null;
+            } else if (root.right != null) {
+                root.data = rightTrav(root);
+                root.right = delete(root.right, data);
+            } else if (root.left != null) {
+                root.data = lefTrav(root);
+                root.left = delete(root.left, data);
             }
         }
-        return temp;
+        return root;
     }
 
     int rightTrav(node rig) {
@@ -172,7 +172,7 @@ public class BST {
         b.postorder();
         b.inorder();
         System.out.println("After Deletion...");
-        b.delete(50);
+        b.delete(8);
         b.preorder();
 
     }
