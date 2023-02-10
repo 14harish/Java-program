@@ -129,10 +129,10 @@ class BinaryTree {
                 root = null;
             } else if (root.right != null) {
                 root.data = rightTrav(root);
-                root.right = delete(root.right, data);
+                root.right = delete(root.right, root.data);
             } else if (root.left != null) {
                 root.data = lefTrav(root);
-                root.left = delete(root.left, data);
+                root.left = delete(root.left, root.data);
             }
         }
         return root;
@@ -140,15 +140,15 @@ class BinaryTree {
 
     int rightTrav(node rig) {
         rig = rig.right;
-        while (rig.right != null) {
-            rig = rig.right;
+        while (rig.left != null) {
+            rig = rig.left;
         }
         return rig.data;
     }
 
     int lefTrav(node lef) {
-        lef = lef.right;
-        while (lef.left != null) {
+        lef = lef.left;
+        while (lef.right != null) {
             lef = lef.right;
         }
         return lef.data;
@@ -172,7 +172,8 @@ public class BST {
         b.postorder();
         b.inorder();
         System.out.println("After Deletion...");
-        b.delete(8);
+        b.delete(10);
+        b.delete(5);
         b.preorder();
 
     }
