@@ -9,9 +9,10 @@ public class SquareNo {
         int val4=n;
 
         for(int i=0;i<n*2-1;i++,System.out.println()){
+            int r=(i<n) ? i : (n*2)-i-2;
             for(int j=0;j<n*2-1;j++){
-                int r=(i<n) ? i : (n*2)-i ;
-                int min=r<j ? r :j;
+                int col=(j<n) ? j : (n*2)-j-2 ; 
+                int min=r<col ? r : col;
                 System.out.print(val1-min+" ");
             }
         }
