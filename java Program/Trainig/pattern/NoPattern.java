@@ -10,7 +10,7 @@ public class NoPattern {
                     System.out.print(val+" ");
             }
         }
-            val++;
+        val++;
         }
 
     }
