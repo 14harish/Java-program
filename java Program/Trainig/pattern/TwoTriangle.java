@@ -1,4 +1,4 @@
-package Trainig;
+package Trainig.pattern;
 
 public class TwoTriangle {
     public static void main(String[] args) {
