@@ -15,6 +15,5 @@ public class Finding_Max_Using_IntegerMAX {
         }
         System.out.println(min);
         System.out.println(max);
-
     }
 }
