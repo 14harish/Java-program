@@ -111,7 +111,7 @@ public class FirstletterPattern {
             for(int s=0;s<=n-i-2;s++){
                 System.out.print("  ");
             }
-            for(int j=0;j<=i+n;j++){;
+            for(int j=0;j<=i*2;j++){;
                 if((j==0 || j==i*2)){
                     System.out.print("* ");
                 }else{
