@@ -12,15 +12,14 @@ public class sortArray {
             ar[i]=sc.nextInt();
         }
 
-        for(int i=0;i<ar.length;i++){
-            for(int j=i+1;j<ar.length;j++){
-                if(ar[i]>ar[j]){
+        for(int i=0;i<ar.length-1;i++){
+                if(ar[i]>ar[i+1]){
                     int temp=ar[i];
-                    ar[i]=ar[j];
-                    ar[j]=temp;
+                    ar[i]=ar[i+1];
+                    ar[i+1]=temp;
+                    i=-1;
                 }
             }
-        }
         System.out.println(Arrays.toString(ar));
     }
     
