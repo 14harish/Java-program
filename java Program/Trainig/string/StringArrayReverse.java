@@ -1,7 +1,5 @@
 package Trainig.string;
 
-import java.rmi.server.Operation;
-
 public class StringArrayReverse {
     public static void main(String[] args) {
         String str="ONE TWO THREE";
@@ -27,23 +25,8 @@ public class StringArrayReverse {
             }else{
                 c+=str.charAt(i);
             }
+            // System.out.println(c);
         }
         System.out.println();
-        for(int i=str.length()-1;i>=0;i--){
-            // System.out.print(str.charAt(i));
-            if(str.charAt(i)==' ' || i==0){
-                if(i==0){
-                    c+=str.charAt(i);
-                }
-                for(int j=0;j<c.length();j++){
-                    System.out.print(c.charAt(j));
-                }
-                System.out.print(" ");
-                c="";
-            }else{
-                c+=str.charAt(i);
-            }
-        }
-        System.out.println(c);
     }
 }
