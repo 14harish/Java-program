@@ -16,6 +16,7 @@ public class FactorInArray {
                 rem[size++]=n/i;
             }
         }
+        System.out.println(Arrays.toString(rem));
         for(int j=0;j<size;j++){
             System.out.print(rem[size-1-j]+" ");
         }
