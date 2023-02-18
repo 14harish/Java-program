@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class Factors {
     public static void main(String[] args) {
-        int n=20;
+        int n=320;
         ArrayList<Integer> a1=new ArrayList<>();
         for(int i=1;i*i<n;i++){ //Math.sqrt alternate i*i<n
             if(n%i==0){
