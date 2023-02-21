@@ -42,10 +42,27 @@ public class AddingToLinkedList {
         }
         System.out.println();
     }
-    static Node AddingWithCarry(Node head,Node root){
+    public static Node AddingWithCarry(Node head,Node root){
         Node res=null;
         Node temp1=head,temp2=root;
-        
+        int carry=0;
+        while(temp1!=null && temp2!=null){
+            int val=temp1.data+temp2.data+carry;
+            temp1=temp1.next;
+            temp2=temp2.next;
+            carry=val/10;
+            res=add(res, val%10);
+        }
+        Node temp3=(temp1==null)?temp2:temp1;
+        while(temp3!=null){
+            int val=temp3.data+carry;
+            temp3=temp3.next;
+            carry=val/10;
+            res=add(res, val%10);
+        }
+        if(carry!=0){
+            res=add(res,carry);
+        }
         return res;
     }
     public static void main(String[] args) {
@@ -84,6 +101,7 @@ public class AddingToLinkedList {
             int val=Integer.parseInt(dup.charAt(i)+"");
             res=add(res,val);
         }
+
         Node res2=AddingWithCarry(head, root);
         display(head);
         display(root);
