@@ -1,7 +1,6 @@
 import java.math.BigInteger;
 import java.util.Scanner;
 
-// import BinaryTree.node;
 
 public class AddingToLinkedList {
     static class Node{
