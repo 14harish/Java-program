@@ -1,4 +1,4 @@
-package Training;
+
 public class encryption {
 public static void main(String[] args) {
 	int last=0;
