@@ -3,6 +3,7 @@ package Trainig.Basic;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+// Tabulation
 public class fibonaciis {
     public static void main(String[] args) {
         int n=10;
