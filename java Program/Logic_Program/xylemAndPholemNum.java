@@ -12,10 +12,6 @@ public class xylemAndPholemNum {
             }
         }
         System.out.println(sum1+" "+sum2);
-        if(sum1==sum2){
-            System.out.println("Xylem");
-        }else{
-            System.out.println("pholem");
-        }
+        System.out.println(sum1==sum2?"xylem":"pholem");
     }
 }
