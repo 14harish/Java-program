@@ -3,7 +3,7 @@ import java.util.List;
 
 public class SpiralPrg {
     public static void main(String[] args) {
-      int m[][] = {{1,2,3,4},{5,6,7,8},{9,10,11,12  }};
+      int m[][] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
       List<Integer> a=new ArrayList<>();
       int rowS=0,rowE=m.length;
       int colS=0,colE=m[0].length;
