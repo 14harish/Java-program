@@ -1,4 +1,3 @@
-
 public class SingleLinkedList {
     public node head;
        private static class node{
