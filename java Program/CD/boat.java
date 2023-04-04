@@ -1,18 +1,27 @@
 public class boat {
     public static void main(String[] args) {
-        int arr[]=[1,2,3,4,2,5,6];
-        int limit=6;
+        int arr[]={1,2,2,1,3};
+        int limit=3;
         ArrayList a=new ArrayList<Integer>();
         for(int i=0;i<arr.length;i++){
             int sum=0;
+            ArrayList<Integer> a1=new ArrayList<>();
             for(int j=i;j<arr.length;j++){
                 if(arr[j]!=-1){
                     sum+=arr[j];
+                    if(sum<=limit){
+                      a1.add(arr[j]);
+                      arr[j]=-1;
+                    }
+                      if(sum==limit){
+                        break;
+                    }
+                    }
                 }
+              if(a1.size()!=0){
+                a.add(a1);
+              }
             }
-            a.add(sum);
-        }
         System.out.println(a);
-    }   
-
+        }
 }
