@@ -1,8 +1,8 @@
-package Basic;
+
 import java.util.*;
 public class CheckFibooMeth2 {
     public static void main(String[] args) {
-        int n=5;
+        int n=2;
         double sqrt=Math.sqrt(5*(n*n)-4);
         String s=sqrt+"";
         String arr[]=s.split("[.]");

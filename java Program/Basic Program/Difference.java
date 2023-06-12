@@ -1,5 +1,3 @@
-package Basic;
-
 
 public class Difference {
 public static void main(String[] args) {

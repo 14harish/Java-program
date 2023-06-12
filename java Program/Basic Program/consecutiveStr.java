@@ -1,4 +1,4 @@
-package Basic;
+
 public class consecutiveStr{
     public static void main(String[] args) {
         String n="abbcccddddeeeeedcba";

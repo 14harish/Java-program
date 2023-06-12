@@ -1,5 +1,3 @@
-package Basic;
-
 
 public class countDigit {
 public static void main(String[] args) {
@@ -7,6 +5,7 @@ public static void main(String[] args) {
 	String na[]=in.split("[0-9]");
 	int count=0;
 	for(int i=0;i<na.length;i++) {
+		System.out.println(na[i]);
 		if(na[i].length()>0) {
 			count++;
 		}

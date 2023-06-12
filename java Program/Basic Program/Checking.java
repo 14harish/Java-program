@@ -1,7 +1,7 @@
-package Basic;
+
 public class Checking {
     public static void main(String[] args) {
-        int n=110;
+        int n=1001;
         System.out.println(n);
         String s=""+n;
         s=s.replace("1","");
