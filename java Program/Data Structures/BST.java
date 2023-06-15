@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.*;
+
 class BinaryTree {
     node root;
 
@@ -118,6 +122,34 @@ class BinaryTree {
             System.out.println("data");
         }
     }
+    void levelorder(){
+        if(root==null){
+            return ;
+        }
+        LevelOrder(root);
+    }
+    int k=0;
+    void LevelOrder(node root){
+         Queue<node> q=new LinkedList<>();
+         q.add(root);
+         while(!q.isEmpty()){
+            int size=q.size();
+            ArrayList<Integer> a=new ArrayList<>();
+            for(int i=0;i<size;i++){
+                node temp=q.remove();
+                a.add(temp.data);
+                if(temp.left!=null){
+                    q.add(temp.left);
+                }
+                if(temp.right!=null){
+                    q.add(temp.right);
+                }    
+            }
+            System.out.println("Level:"+k);
+            System.out.println(a);
+            k++;
+         }
+    }
 
     public node delete(node root, int data) {
         if (data > root.data) {
@@ -175,6 +207,6 @@ public class BST {
         b.delete(10);
         b.delete(5);
         b.preorder();
-
+        b.levelorder();
     }
 }
