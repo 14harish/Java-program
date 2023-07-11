@@ -11,6 +11,5 @@ public class factorial {
     }
     System.out.println(Arrays.toString(fact));
     System.out.println(fact[5]);
-
    } 
 }

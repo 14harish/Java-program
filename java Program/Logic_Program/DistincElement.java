@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class DistincElement {
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 2, 3,1, 4, 8 };
+        int arr[] = { 1, 2, 2, 3,1, 4, 8,5 };
         Arrays.sort(arr);
         int count = 0;
         int res = 0;

@@ -8,7 +8,7 @@ public class LCM {
         int lcm=large;
         while(lcm%small!=0){
             lcm+=large;
-        }
+        }   
         System.out.println(lcm);
     }
 }
