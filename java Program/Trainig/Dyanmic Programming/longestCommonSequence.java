@@ -12,6 +12,7 @@ public class longestCommonSequence {
     String store="";
     for(int i=1;i<arr1.length;i++){
         for(int j=1;j<arr2.length;j++){
+            System.out.println(arr1[i]+"---"+arr2[j]);
             if(arr1[i]==arr2[j]){
                 arr[i][j]=arr[i-1][j-1]+1;
                 if(arr[i-1][j]==arr[i][j-1]){

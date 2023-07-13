@@ -9,7 +9,6 @@ public class BinarySearch {
         return search(arr,k,0,n-1);
     }
     static int search(int arr[],int k,int l,int h){
-        // int mid=0;
         if(l<=h){
             System.out.println(l+"---"+h);
             int mid=l+(h-l)/2;
