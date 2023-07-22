@@ -3,7 +3,6 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int arr[]={2,1,4,3,6,5,8,7};
-        // arr=mergeSort(arr);
         System.out.println("Sorted array: "+ Arrays.toString(mergeSort(arr)));
     }
 
@@ -13,7 +12,6 @@ public static int[] mergeSort(int arr[]){
     }
 
     int mid=arr.length/2;
-
     int left[]=mergeSort(Arrays.copyOfRange(arr, 0, mid));
     int right[]=mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
 
