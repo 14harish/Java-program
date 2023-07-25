@@ -2,7 +2,7 @@ package Trainig.pattern;
 
 public class diamondiN {
     public static void main(String[] args) {
-        int n=11;
+        int n=15;
         int star=n/2+1;
         int space=0;
         for(int i=1;i<=n;i++){
