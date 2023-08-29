@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Diagnol/Diagnol.iml" filepath="$PROJECT_DIR$/Diagnol/Diagnol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GCD/GCD.iml" filepath="$PROJECT_DIR$/GCD/GCD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaventicQuestion.iml" filepath="$PROJECT_DIR$/MaventicQuestion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeQuestion/MeQuestion.iml" filepath="$PROJECT_DIR$/MeQuestion/MeQuestion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PassValidation/PassValidation.iml" filepath="$PROJECT_DIR$/PassValidation/PassValidation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pattern/Pattern.iml" filepath="$PROJECT_DIR$/Pattern/Pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RevEachWord/RevEachWord.iml" filepath="$PROJECT_DIR$/RevEachWord/RevEachWord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Slanting/Slanting.iml" filepath="$PROJECT_DIR$/Slanting/Slanting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VowelsToCapital/VowelsToCapital.iml" filepath="$PROJECT_DIR$/VowelsToCapital/VowelsToCapital.iml" />
+    </modules>
+  </component>
+</project>

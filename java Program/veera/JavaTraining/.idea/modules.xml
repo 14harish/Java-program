@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Day2/AlphaLine/AlphaLine.iml" filepath="$PROJECT_DIR$/Day2/AlphaLine/AlphaLine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Average/Average.iml" filepath="$PROJECT_DIR$/Day2/Average/Average.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Day2.iml" filepath="$PROJECT_DIR$/Day2/Day2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Exponential/Exponential.iml" filepath="$PROJECT_DIR$/Day2/Exponential/Exponential.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/FirstDigit/FirstDigit.iml" filepath="$PROJECT_DIR$/Day2/FirstDigit/FirstDigit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/GradeCalculation/GradeCalculation.iml" filepath="$PROJECT_DIR$/Day2/GradeCalculation/GradeCalculation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTraining.iml" filepath="$PROJECT_DIR$/JavaTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Multiple/Multiple.iml" filepath="$PROJECT_DIR$/Day2/Multiple/Multiple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Nodd/Nodd.iml" filepath="$PROJECT_DIR$/Day2/Nodd/Nodd.iml" />
+    </modules>
+  </component>
+</project>
