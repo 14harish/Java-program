@@ -1,5 +1,4 @@
-package Trainig.pattern;
-
+p
 public class NoPattern {
     public static void main(String[] args) {
         int n=5;

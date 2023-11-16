@@ -1,4 +1,3 @@
-package Trainig.pattern;
 
 public class efilTower {
     public static void main(String[] args) {

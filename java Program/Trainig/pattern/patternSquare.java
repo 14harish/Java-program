@@ -1,4 +1,3 @@
-package Trainig.pattern;
 
 public class patternSquare {
     public static void main(String[] args) {
