@@ -1,8 +1,8 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class A1SubsetOfA2 {
     public static void main(String[] args) {
-        ArrayList<Long> h=new ArrayList<>();
+        ArrayList<Integer> h=new ArrayList<>();
         int a1[] = {11, 7, 1, 13, 21, 3, 7, 3};
         int a2[] = {11, 3, 7, 1, 7};
         int n=a1.length,m=a2.length;
