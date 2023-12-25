@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int arr[]={2,1,4,3,6,5,8,7};
+        int arr[]={5,3,2,4,1};
         System.out.println("Sorted array: "+ Arrays.toString(mergeSort(arr)));
     }
 
