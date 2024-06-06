@@ -27,7 +27,6 @@ public class circularLinkedList {
     void addLast(int data){
         node d=new node(data);
         node temp=head;
-        // int count=0;
         if(head==null){
             head=d;
             d.next=head;
@@ -47,6 +46,7 @@ public class circularLinkedList {
         d.next=head;
     }
     }
+
     void deleteFirst(){
         if(head==null){
             return;
@@ -59,6 +59,7 @@ public class circularLinkedList {
         }while(temp.next!=p);
         temp.next=head;
     }
+
     void deleteLast(){
         if(head==null){
             return;
@@ -100,6 +101,7 @@ public class circularLinkedList {
         temp.next=last;
         head=temp;
     }
+
     public static void main(String[] args) {
         circularLinkedList c=new circularLinkedList();
         c.addfirst(10);
@@ -116,6 +118,5 @@ public class circularLinkedList {
         // c.display();
         c.reverse();
         c.display();
-
     }
 }

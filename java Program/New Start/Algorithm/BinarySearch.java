@@ -7,7 +7,8 @@ public class BinarySearch {
 
     public static boolean search(int arr[], int start, int end, int k) {
         if (start <= end) {
-            int mid = start + (end - start) / 2; // Corrected the calculation of mid
+            int mid = start + (end - start) / 2; 
+            // Corrected the calculation of mid
             // System.out.println(start + "---" + end);
             // System.out.println(mid);
             if (k == arr[mid]) {

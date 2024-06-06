@@ -58,6 +58,7 @@ public class StackImplementation {
             temp = temp.next;
         }
     }
+    
     public static void main(String[] args) {
         StackImplementation s = new StackImplementation();
         s.push(10);

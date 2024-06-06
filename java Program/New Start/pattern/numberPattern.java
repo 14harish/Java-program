@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class numberPattern {
     public static void main(String[] args) {
-        int n=12;
+        int n=4;
         ArrayList<String> a=new ArrayList<>();
         for(int i=0;i<n;i++){
             String s="",s1="";
@@ -19,6 +19,9 @@ public class numberPattern {
                     s1=dup+1+" "+s1+" ";
                 }
             }
+            System.out.println(dup);
+            System.out.println(s);
+            System.out.println(s1);
             a.add(s+s1);
         }
         for(int i=0;i<a.size();i++){

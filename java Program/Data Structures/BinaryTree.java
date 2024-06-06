@@ -1,4 +1,9 @@
 import java.util.*;
+// h = n+1/2
+
+// n= 2*h - 1
+
+
 
 public class BinaryTree {
     node root;
