@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class removeDup {
     public static void main(String[] args) {
@@ -16,5 +17,20 @@ public class removeDup {
         for (int p = 0; p < i+1; p++) {
             System.out.print(arr[p] + " ");
         }
+
+        HashMap<Integer,Integer> h=new HashMap<>();
+        for(int j=0;j<arr.length;j++){
+            if(h.containsKey(arr[j]))
+            h.put(arr[j],h.get(arr[j])+1);
+            else
+            h.put(arr[j],1);
+            }
+            System.out.println(h);
+            for(Map.Entry<Integer,Integer> m:h.entrySet()){
+                // System.out.println(h.get(arr[j]));
+                System.out.println(m.getKey());
+                System.out.println(m.getValue());
+            }
+            }
+
     }
-}

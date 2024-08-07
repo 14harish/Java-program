@@ -7,6 +7,6 @@ public class missingNumber {
         for(int i=0;i<nums.length;i++){
             sum-=nums[i];
         }
-        System.out.println(nums);
+        System.out.println(sum);
     }
 }

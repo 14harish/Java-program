@@ -6,6 +6,7 @@ public class insertionSort {
         int arr[]={4,7,3,1,5,7};
         for(int i=1;i<size;i++){
             for(int j=i;j>0;j--){
+                System.out.println(j+"---"+i);
                 if(arr[j]<arr[j-1]){
                     int temp=arr[j];
                     arr[j]=arr[j-1];
@@ -14,6 +15,7 @@ public class insertionSort {
                     break;
                 }
             }
+            System.out.println("hel");
         }
         System.out.println(Arrays.toString(arr));
     }

@@ -7,7 +7,7 @@ public class strongNumber {
     for(int i=1;i<=20;i++){
         fact[i]=i*fact[i-1];
     }
-    long n=40583;
+    long n=123;
     long org=n,sum=0;
     do{
      sum+=fact[(int)n%10];

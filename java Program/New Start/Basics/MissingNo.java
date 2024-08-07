@@ -4,7 +4,7 @@ public class MissingNo {
     public static void main(String[] args) {
         int r=0;
         int n=10;
-        int array[]={6,1,2,8,3,4,7,10,5};
+        int array[]={6,1,2,8,3,4,7,10,5 };
         Arrays.sort(array);
         if(array.length!=1){
         for(int i=0;i<n-2;i++){

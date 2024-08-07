@@ -1,4 +1,4 @@
-package Basic;
+// package Basic;
 import java.util.*;
 public class duckNum {
     public static void main(String[] args) {
