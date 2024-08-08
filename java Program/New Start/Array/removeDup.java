@@ -10,10 +10,12 @@ public class removeDup {
         int i = 0;
         for (int j = 1; j < arr.length; j++) {
             if (arr[i] != arr[j]) {
+                System.out.println(arr[i]+"---"+arr[j]);
                 i++;
                 arr[i] = arr[j];
             }
         }
+
         for (int p = 0; p < i+1; p++) {
             System.out.print(arr[p] + " ");
         }

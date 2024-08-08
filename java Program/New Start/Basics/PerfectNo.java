@@ -9,7 +9,7 @@ public class PerfectNo {
                     if(i!=N){
                     sum+=i;
                     }
-                }else{
+                }else{  
                     if(i!=N){
                        sum+=i;
                     }

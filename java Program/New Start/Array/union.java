@@ -6,7 +6,7 @@ public class union {
         int b[]={102,02,2};
         int n=a.length;
         int m=b.length;
-         HashSet<Integer> h=new HashSet();
+        HashSet<Integer> h=new HashSet();
         for(int i=0;i<n;i++){
             h.add(a[i]);
         }
